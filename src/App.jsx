@@ -7,24 +7,9 @@ import Technology from './components/Technology'
 import Experience from './components/Experience'
 import Project from './components/Project'
 import Contact from './components/Contact'
-import { useEffect, useState } from 'react'
-import Loading from './components/Loading'
-function App() {
-  
- const [load,setLoading] = useState(false)
-  
- useEffect(()=>{
-  window.addEventListener("load",()=>{
-    setLoading(true)
-  })
- },[])
- 
 
-  if(!load){
-    return (
-      <Loading/>
-    )
-  }
+function App() {
+ 
 
   return (
       <div className='bg-slate-900'>
