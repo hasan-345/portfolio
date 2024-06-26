@@ -40,10 +40,10 @@ const Experience = () => {
   return (
     <section className='my-10 p-3'>
                <motion.div whileInView={{y:0, opacity:1}} initial={{y:-100, opacity:0}} transition={{duration:1}} className='flex justify-center flex-col w-full relative z-[4]  mb-9'><div> <h1 className='text-white text-5xl text-center'> Experience </h1> <div className='text-center flex justify-center'> <motion.img whileInView={{width:100, opacity:1}} initial={{width:0, opacity:0}} transition={{duration:1, delay:0.5}} src={curve} alt="" className='h-[10px] mt-1' /></div> </div></motion.div>
-
+              
          <div className="relative max_width_screen w-full text-white">
             {EXPERIENCES.map((item,i)=>(
-                <div key={i} className='relative z-[10] flex sm:flex-row flex-col mb-3'>
+                <div key={i} className='relative z-[10] flex sm:flex-row flex-col mb-3 mx-1'>
                   <div className='flex-1 flex sm:justify-center justify-start sm:my-0 my-2 text-neutral-400'> {item.year} </div>
                   <div className='flex flex-1 flex-col gap-3'>
                     <div className='flex gap-2 font-semibold'> <p> {item.role} - </p> <p> {item.company} </p> </div>

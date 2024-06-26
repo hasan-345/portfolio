@@ -34,6 +34,7 @@ const Contact = () => {
   return (
     <footer className='w-full flex justify-center flex-col items-center pb-5'>
      <motion.div whileInView={{y:0, opacity:1}} initial={{y:-100, opacity:0}} transition={{duration:1}} className='flex justify-center flex-col w-full relative z-[4]  mb-9'><div> <h1 className='text-white text-5xl text-center'> Get in touch </h1> <div className='text-center flex justify-center'> <motion.img whileInView={{width:100, opacity:1}} initial={{width:0, opacity:0}} transition={{duration:1, delay:0.5}} src={curve} alt="" className='w-[100px] h-[10px] mt-1' /></div> </div></motion.div>
+     
      <p className='text-neutral-400'>Islampura Street No 8, Toba Tek Singh</p>
      <p className='text-neutral-400 py-1'>+923006566584</p>
      <p className='underline text-neutral-300'> ahtishamhassan345@gmail.com </p>

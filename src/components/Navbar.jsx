@@ -47,16 +47,16 @@ const Navbar = () => {
     }
   })
 
-
+//  variants={iconVar(i/2)} initial="hidden" animate="visible"
   return (
     <header className='w-full flex justify-between p-5 text-white items-center max_width_screen'>
      <img className="text-5xl font-semibold h-[100px] relative z-[10] object-cover" src={logo}/>
      <ul className="flex sm:gap-7 gap-3">
        {
         navItems.map((item,i)=>(
-            <motion.li key={item.id} variants={iconVar(i/2)} initial="hidden" animate="visible" >
+            <li key={item.id} >
               <a href={item.dest} target='_blank'>  {item.title}</a>
-            </motion.li>
+            </li>
         ))
        }
      </ul>
