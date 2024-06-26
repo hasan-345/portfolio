@@ -35,6 +35,7 @@ const Project = () => {
         },
         {
           title: "Blog React Website",
+          des:"http://bloging-lyart.vercel.app",
           image: project4,
           description:
             "Blog webiste is created using React Js and backend services provided such that Appwrite. This website is included functionality such that Upload posts, Edit posts, All posts etc. This website is fully functionally. ",
