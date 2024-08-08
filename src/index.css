@@ -13,7 +13,7 @@ body,html{
     margin: 0 auto;
 }
 .pink__gradient {
-    background: linear-gradient(to right, #5e19a7 0%, #2b6ad7 100%);
+    background: linear-gradient(to right, #5507a8 0%, #2b6ad7 100%);
     filter: blur(900px);
   }
 
@@ -32,7 +32,7 @@ body,html{
     filter: blur(123px)
   }
   .text__gradient{
-    background: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+    background: linear-gradient(to right, #da275c 0%, #fee140 100%);
     background-clip: text;
     -webkit-text-fill-color: transparent;
   }

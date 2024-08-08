@@ -9,7 +9,7 @@ const About = () => {
 return (
     <section className='my-[60px] py-[50px]'>
 
-<motion.div whileInView={{y:0, opacity:1}} initial={{y:-100, opacity:0}} transition={{duration:1}} className='flex justify-center flex-col w-full relative z-[4]  mb-9'><div> <h1 className='text-white text-5xl text-center'> About <span className='text-neutral-400'>Me</span> </h1> <div className='text-center flex justify-center'> <motion.img whileInView={{width:100, opacity:1}} initial={{width:0, opacity:0}} transition={{duration:1, delay:0.5}} src={curve} alt="" className='w-[100px] h-[10px] mt-1' /></div> </div></motion.div>
+<motion.div whileInView={{y:0, opacity:1}} initial={{y:50, opacity:0}} transition={{duration:1}} className='flex justify-center flex-col w-full relative z-[4]  mb-9'><div> <h1 className='text-white text-5xl text-center'> About <span className='text-neutral-400'>Me</span> </h1> <div className='text-center flex justify-center'> <motion.img whileInView={{width:100 , opacity:1}} initial={{ opacity:0}} transition={{duration:1, delay:0.5}} src={curve} alt="" className='w-[100px] h-[10px] mt-1' /></div> </div></motion.div>
 
         
         

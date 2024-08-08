@@ -35,7 +35,7 @@ const Navbar = () => {
 
   const iconVar = (duration)=>({
     hidden:{
-        y: 80,
+        y: 40,
         opacity: 0
     },
     visible:{
@@ -50,13 +50,13 @@ const Navbar = () => {
 //  variants={iconVar(i/2)} initial="hidden" animate="visible"
   return (
     <header className='w-full flex justify-between p-5 text-white items-center max_width_screen'>
-     <img className="text-5xl font-semibold h-[100px] relative z-[10] object-cover" src={logo}/>
+     <motion.img className="text-5xl font-semibold h-[100px] relative z-[10] object-cover" src={logo}  />
      <ul className="flex sm:gap-7 gap-3">
        {
         navItems.map((item,i)=>(
-            <li key={item.id} >
+            <motion.li key={item.id} variants={iconVar(i/2)} initial="hidden" animate="visible" >
               <a href={item.dest} target='_blank'>  {item.title}</a>
-            </li>
+            </motion.li>
         ))
        }
      </ul>
